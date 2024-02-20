@@ -9,18 +9,19 @@
 
 #Задачу сделал неправильно,не знаю как сделать чтобы зп увеличивалась на 100 каждый месяц
 
-dat= input('Дата поступления на работу')
-week= input('Количество отработанных недель ')
-week=int(week)
-zp = input('Размер з.п в неделю ')
-zp=int(zp)
-otpusk=week/2
-if week <= 4:
- oklad=zp*week
- otpusknyie= oklad
+dat  = input('Дата поступления на работу')
+week = input('Количество отработанных недель ')
+week = int(week)
+zp   = input('Размер з.п в неделю ')
+zp   = int(zp)
+
+otpusk = week/2
+if week    <= 4:
+ oklad      = zp*week
+ otpusknyie = oklad
 else:
- oklad=zp*week+100
- otpusknyie=oklad-100
+ oklad      = zp*week+100
+ otpusknyie = oklad-100
 print('Ваша зарботная плата',oklad,'рублей')
 print('Ваши отпускные',otpusknyie,'руб')
 print('Ваш отпуск',otpusk,'дней')
