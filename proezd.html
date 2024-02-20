@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <script src="tsk.js"></script>
+        <link href="layuout.css"
+              rel="stylesheet">
+    </head>
+    <body>
+    <form>
+     <input type="number" id="birth" placeholder="Год рождения" min="1900" max="2024">
+     <label for="cena">Выберите тариф</label>
+     <select id="cena">
+        <option  value="hour">час</option>
+        <option  value="week">неделя</option>
+        <option  value="month">месяц</option>
+        <option  value="year">год</option>
+     </select>
+    <button onclick="zzz()">Рассчитать</button>
+    <h1>Цена за проезд</h1>
+     <p id="f"></p>
+    </form>
+    </body>
+</html>
