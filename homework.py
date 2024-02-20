@@ -15,7 +15,9 @@ week = int(week)
 zp   = input('Размер з.п в неделю ')
 zp   = int(zp)
 
-otpusk = week/2
+otpusk = week/2 #количество дней отпуска
+
+#Вычисление оклада и зарплаты
 if week    <= 4:
  oklad      = zp*week
  otpusknyie = oklad

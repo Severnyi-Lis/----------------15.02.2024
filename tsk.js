@@ -11,7 +11,6 @@
 стоимость проездного указанного тарифа для
 рассматриваемого гражданина и вывести сообщение на экран.*/
 
-
 var bir     = Number(document.querySelector('#birth'));
 var cena    = document.querySelector('#cena');
 var hour_1  = 60;
