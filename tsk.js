@@ -1,5 +1,5 @@
-/*
-HTML + Js
+/*HTML + Js
+
 В общественном транспорте действует система скидок.
 Если Вы старше 50 лет или младше 14-ти - проезд
 бесплатный. Если Вы студент (14-24 года),
@@ -9,7 +9,8 @@ HTML + Js
 рублей и год 10 тысяч для взрослого человека,
 не попадающего в льготную категорию. Вычислить
 стоимость проездного указанного тарифа для
-рассматриваемого гражданина и вывести сообщение на экран.*/ 
+рассматриваемого гражданина и вывести сообщение на экран.*/
+
 
 var bir     = Number(document.querySelector('#birth'));
 var cena    = document.querySelector('#cena');
@@ -17,7 +18,7 @@ var hour_1  = 60;
 var week_2  = 300;
 var month_3 = 1000;
 var year_4  = 10000;
-var result  = document.querySelector('#f')
+var result 
 
 var dt= new Date().getFullYear();
 var dat= dt-bir ;
@@ -42,4 +43,6 @@ function zzz(){
  }else if(dat >= 25 && cena == 'year'){
   result= year_4;
  }
+ f.innerHTML=result;
+ return result
 }
