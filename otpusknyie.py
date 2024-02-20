@@ -14,17 +14,21 @@ week = input('Количество отработанных недель ')
 week = int(week)
 zp   = input('Размер з.п в неделю ')
 zp   = int(zp)
-
-otpusk = week/2 #количество дней отпуска
-otpusk = int(otpusk)
+if week>=2:
+ otpusk = week/2 #количество дней отпуска
+ otpusk = int(otpusk)
+ print('Ваш отпуск',otpusk,'дней')
+else:
+ print('Раб мало работал, не заработал отпуск')
 #Вычисление оклада и зарплаты
+ 
 if week    <= 4:
  oklad      = zp*week
  otpusknyie = oklad
 else:
  oklad      = zp*week+100
  otpusknyie = oklad-100
-print('Ваша зарботная плата',oklad,'рублей')
+ print('Ваша зарботная плата',oklad,'рублей')
 print('Ваши отпускные',otpusknyie,'руб')
-print('Ваш отпуск',otpusk,'дней')
+
 
